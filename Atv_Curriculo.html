@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo</title>
+    <style>
+        html, body {
+            height: 100%; /* Garante que html e body ocupem 100% da altura da viewport */
+            margin: 0; /* Remove margens padrão do body */
+        }
+        .container {
+            display: flex; /* Ativa o layout flexível */
+            gap: 20px;    /* Espaçamento entre as colunas */
+            height: 120%; /* Faz o container ocupar 100% da altura do body */
+        }
+        .coluna-lateral {
+            flex: 0 0 20%;
+            height: 100%; /* Define largura fixa de 20% */
+        }
+        .coluna-principal {
+            flex: 1;       /* Ocupa o restante do espaço (80%) */
+            border-left: 2px solid black; /* Cria a linha vertical cinza */
+            padding-left: 25px;
+            height: 100%;          /* Espaço entre a linha e o conteúdo da direita */
+        }
+        #nome{
+            text-align:center;
+
+        }
+        #Curso{
+            text-align:center;
+            color:rgb(51, 51, 240);
+        }
+        #linkedin{
+            color:black;
+        }
+        #github{
+            color:black;
+        }
+        #habilidades{
+            border-color: rgb(12, 10, 14);
+        }
+        #foto{
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            display: block;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+    <body>
+        <div class="container">
+            <!-- Coluna de 20% (Informações de contato) -->
+            <div class="coluna-lateral">
+                <u><i><h1 id="nome">Leandro Souza de Oliveira</h1></i></u>
+                <img src="fotos/WhatsApp Image 2026-05-14 at 16.11.00.jpeg" id="foto">
+                <fieldset>
+                    <fieldset>
+                        <legend><b>Informações Pessoais</b></legend>
+                    <ul><b>
+                        <li id="celular">Celular: (11) 92010-1929</li>
+                        <li>
+                            <a id="linkedin" href="https://www.linkedin.com/in/leandro-souza-de-oliveira-aa048b1b8">Linkedin</a>
+                        </li>
+                        <li id="objetivo">Objetivo: Estágio</li>
+                        <li id="email">Email: souzadeoliveira@gmail.com</li>
+                        <li id="endereco"> Diadema - SP</li>
+                        <li><a id="github" href="https://github.com/souzadeoliveiraleandro-maker">Github</a></li>
+                    </b></ul>
+                    </fieldset>
+                    <fieldset> 
+                        <legend><b>Habilidades Técnicas</b></legend>
+                        <table id="habilidades" border="10" >
+                            <tr>
+                               <th id="Linguagem">Linguagem de Programação</th>
+                               <th id="Banco">Banco de Dados</th>
+                               <th id="Framework">Framework</th> 
+                            </tr>
+                            <tr>
+                                <th>Javascript</th>
+                                <th>SqlServer</th>
+                                <th>React</th>
+                            </tr>
+                            <tr>
+                                <th>C#</th>
+                                <th>MongoDB</th>
+                                <th>React Native</th>
+                            </tr>
+                            <tr>
+                                <th>Phython</th>
+                                <th>Firebase</th>
+                                <th>Angular</th>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </fieldset>
+            </div>
+
+            <!-- Coluna de 80% (Experiência, Educação, etc) -->
+            <div class="coluna-principal">
+                <!-- Adicione aqui suas experiências profissionais e formação -->
+             <fieldset><br>
+                <fieldset>
+                    <legend><b>Carta de Apresentação</b></legend>
+                    <p>
+                        <em>Recém formado em Análise e desenvolvimento na Etec Juscelino Kubitschek, 
+                        onde tive minha primeira experiência com programação Web e mobile, 
+                        conhecimentos com Banco de dados também foram adquiridos, desde criação 
+                        de tabelas, inserção de dados e seleção de dados. 
+                        Para completar obtive conhecimento com framework React Native, ferramenta 
+                        que utilizei para desenvolver um aplicativo como projeto de conclusão de 
+                        curso, o objetivo era criar um aplicativo gerenciador de comunidade 
+                        religiosas, na sua construção utilizei React Native, a linguagem de 
+                        programação Javascript e como banco de dados utilizei SQL. 
+                        No momento atual estou cursando Informática para Negócios pela Fatec Adib 
+                        Moisés Dib em SBC, escolhi esse curso com o objetivo de me aperfeiçoar na 
+                        parte de programação e me preparar para o ambiente corporativo. 
+                        Em busca de uma oportunidade de ingressar como Estagiário em áreas da 
+                        tecnologia</em>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend><b>Formação Acadêmica</b></legend>
+                    <Ul>
+                        <li >
+                            <b>Instituição</b>: Fatec Adib Moisés Dib - São Bernardo<br>
+                            <b>Curso:</b> Informática para Negócios<br>
+                           <b> Período:</b> 02/2026 - 12/2028
+                        </li><br>
+                        <li>
+                            <b>Instituição</b>: Etec Juscelino Kubistchek De Oliveira - Diadema<br>
+                            <b>Curso:</b> Técnico em Análise Desenvolvimento De Sistemas<br>
+                           <b> Período:</b> 06/2024 - 12/2025
+                        </li><br>
+                        <li>
+                            <b>Instituição</b>: E.E Vila Santa Maria - Diadema<br>
+                            <b>Curso:</b>  Ensino Médio Completo<br>
+                           <b> Período:</b> 02/2020 - 12/2020
+                        </li>
+                    </Ul> 
+                </fieldset>
+                <fieldset>
+                    <legend><b>Experiência Profissional</b></legend>
+                    <Ul>
+                        <p><b>Empresa:</b> Proinject mold<br><b>Função:</b> Operador de Máquina Injetora<br><b>Período:</b> 03/2022 - 04/2026</p>
+                        <fieldset>
+                            <legend> <b>Atividades:</b></legend>
+                            <li>
+                                Operação de Máquina Injetora
+                            </li>
+                            <li>
+                                Mentoria de novos funcionários
+                            </li>
+                            <li>
+                                Resolução de problemas de processo
+                            </li>
+                        </fieldset>
+                    </Ul>
+                </fieldset>
+                     <fieldset> 
+                        <legend><b>Habilidades Interpessoais</b></legend>
+                        <ul><b>
+                            <li>Comunicação</li>
+                            <li>Adaptabilidade</li>
+                            <li>Objetividade</li>
+                            <li>Raciocínio Lógico</li>
+                            <li>Agilidade</li>
+                        </b></ul>
+                    </fieldset>
+             </fieldset>
+            </div>
+        </div>
+    </body>
+</html>
